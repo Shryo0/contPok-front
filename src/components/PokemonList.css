@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  background: url('https://assets.pokemon.com/static2/_ui/img/chrome/container_bg.png') repeat;
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Press Start 2P', cursive;
+  padding: 20px;
+}
+
+.pokemon-card {
+  border: 2px solid #ffcb05;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 12px auto; /* Centralizei o cartão ajustando a margem esquerda e direita */
+  background-color: #3b4cca;
+  width: 90%; /* Ajustei o tamanho do retângulo azul */
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.pokemon-card h3 {
+  margin: 8px 0;
+  color: #ffcb05;
+}
+
+.pokemon-card p {
+  margin: 4px 0;
+}
+
+.button-group {
+  position: absolute;
+  bottom: 10px;
+  width: 100%; /* Ajustei para ocupar toda a largura do pai */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-group button {
+  padding: 8px 12px; /* Reduzi o padding para caber dentro do retângulo */
+  border: none;
+  border-radius: 4px;
+  background-color: #ffcb05;
+  color: #3b4cca;
+  font-family: 'Press Start 2P', cursive;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+  width: auto; /* Ajustei para o tamanho automático de acordo com o conteúdo */
+  text-align: center; /* Centraliza o texto dentro do botão */
+  margin-top: 10px; /* Adicionei um espaço entre os botões e o texto */
+}
+
+.button-group button:hover {
+  background-color: #3b4cca;
+  color: #ffcb05;
+}
+
+.results {
+  margin-top: 20px;
+  width: 80%;
+  margin-left: auto; /* Ajustei a margem à esquerda para alinhar à direita */
+  margin-right: auto; /* Ajustei a margem à direita para alinhar à direita */
+}
+
+.results h3 {
+  margin-bottom: 10px;
+  color: #ffcb05;
+}
+
+.results div {
+  border: 2px solid #ffcb05;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 12px 0;
+  background-color: #3b4cca;
+  color: white;
+}
+
+.results div p {
+  margin: 4px 0;
+}
+
+.results button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffcb05;
+  color: #3b4cca;
+  font-family: 'Press Start 2P', cursive;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.results button:hover {
+  background-color: #3b4cca;
+  color: #ffcb05;
+}
+
+/* Ajuste para botões ficarem abaixo das informações */
+.pokemon-card .button-group {
+  position: absolute;
+  bottom: -20px; /* Ajuste aqui conforme necessário para deslocar os botões para baixo */
+}
